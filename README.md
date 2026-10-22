@@ -36,10 +36,17 @@ The build creates `dist/wordpress.zip` with a top-level `wordpress/` directory. 
 
 ## Try it in Antigravity
 
+Install the plugin from its GitHub subdirectory with the Antigravity CLI:
+
+```sh
+agy plugin install https://github.com/Automattic/wordpress-antigravity-plugin/tree/main/wordpress
+```
+
+For a local checkout, run `agy plugin install ./wordpress` instead. Then test the connection:
+
 1. Enable MCP access for at least one site in [WordPress.com account settings](https://my.wordpress.com/me/preferences/mcp).
-2. In Antigravity, open **Customizations → Plugins → Install from URL** and enter the absolute path to this repository's `wordpress/` directory.
-3. Confirm the installed plugin appears as **WordPress** with its logo and three starter prompts.
-4. Start a conversation. The first WordPress.com tool call should open the WordPress.com authorization page. Sign in, choose an access level, and allow access.
-5. Ask the plugin to review your site's traffic. Confirm it lists only sites your account can access and calls `statistics.get` for the selected site.
+2. Confirm the installed plugin appears as **WordPress** with its logo and three starter prompts.
+3. Start a conversation. The first WordPress.com tool call should open the WordPress.com authorization page. Sign in, choose an access level, and allow access.
+4. Ask the plugin to review your site's traffic. Confirm it lists only sites your account can access and calls `statistics.get` for the selected site.
 
 The plugin is licensed under GPL-2.0-or-later; see [LICENSE](LICENSE).
