@@ -34,6 +34,19 @@ agy plugin validate --strict ./wordpress
 
 The build creates `dist/wordpress.zip` with a top-level `wordpress/` directory. `agy` is the [Antigravity CLI](https://antigravity.google/cli/install.sh) and is installed separately.
 
+## Releases
+
+The plugin version lives in `wordpress/plugin.json`. To prepare a new release, run:
+
+```sh
+pnpm release:prepare 1.0.1
+pnpm validate
+pnpm test
+pnpm build
+```
+
+Replace `1.0.1` with the intended version, commit the manifest change, and push it to `main`. Then create and push a matching tag (for example, `v1.0.1`). The [release workflow](.github/workflows/release.yml) checks that the tag matches the plugin version, rebuilds and validates the package, and publishes a GitHub Release with `wordpress.zip` and its SHA-256 checksum. Tags with a mismatched version fail before publication.
+
 ## Try it in Antigravity
 
 Install the plugin from its GitHub subdirectory with the Antigravity CLI:

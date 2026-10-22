@@ -4,7 +4,8 @@
   "scripts": {
     "build": "node scripts/build-antigravity-zip.mjs",
     "validate": "node scripts/validate-antigravity.mjs",
-    "test": "node --test scripts/antigravity-package.test.mjs"
+    "test": "node --test scripts/antigravity-package.test.mjs",
+    "release:prepare": "node scripts/prepare-release.mjs"
   },
   "devDependencies": {
     "sharp": "^0.35.5"
