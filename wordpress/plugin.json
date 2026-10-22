@@ -1,0 +1,33 @@
+{
+  "$schema": "https://antigravity.google/schemas/v1/plugin.json",
+  "name": "wordpress",
+  "displayName": "WordPress",
+  "version": "1.0.0",
+  "description": "Build, publish, and manage WordPress.com and Jetpack-connected sites. Draft posts, edit blocks, check traffic stats, moderate comments, and manage plugins.",
+  "logo": "assets/logo.png",
+  "skills": [
+    "./skills"
+  ],
+  "suggestedPrompts": [
+    "Review my site’s traffic and suggest what I should publish next.",
+    "Update the “Learn more” button on my page to “Book a consultation” and link it to my Contact page.",
+    "Draft a blog post announcing 20% off all products this weekend."
+  ],
+  "keywords": [
+    "wordpress",
+    "wordpress.com",
+    "jetpack",
+    "website-builder",
+    "publishing",
+    "cms",
+    "blog",
+    "mcp"
+  ],
+  "author": {
+    "name": "Automattic Inc.",
+    "url": "https://wordpress.com"
+  },
+  "homepage": "https://wordpress.com",
+  "repository": "https://github.com/Automattic/wordpress-antigravity-plugin",
+  "license": "GPL-2.0-or-later"
+}

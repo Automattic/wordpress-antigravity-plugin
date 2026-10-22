@@ -1,0 +1,12 @@
+{
+  "name": "wordpress-antigravity-plugin",
+  "private": true,
+  "scripts": {
+    "build": "node scripts/build-antigravity-zip.mjs",
+    "validate": "node scripts/validate-antigravity.mjs",
+    "test": "node --test scripts/antigravity-package.test.mjs"
+  },
+  "devDependencies": {
+    "sharp": "^0.35.5"
+  }
+}
